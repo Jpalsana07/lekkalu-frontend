@@ -20,7 +20,7 @@ const tabsList = [
 const IncomeStatement = () => {
   const { fetchIncomeStatement, incomeStatement } = useContext(Context);
   const [currentab, setCurrentTab] = React.useState(0);
-
+  console.log({ tt: '12' })
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
@@ -79,7 +79,7 @@ const IncomeStatement = () => {
         value={currentab}
       /> */}
       {incomeStatement.income.length === 0 &&
-      incomeStatement.expenses.length === 0 ? (
+        incomeStatement.expenses.length === 0 ? (
         <div
           className="section col-md-8 mx-auto pb-5 pt-5 mt-5"
           style={{
