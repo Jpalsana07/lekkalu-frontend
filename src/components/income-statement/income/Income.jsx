@@ -3,6 +3,7 @@ import Heading from "components/shared/heading/Heading";
 import React from "react";
 
 const Income = ({ incomeStatement, totalIncome }) => {
+  console.log('====checking income');
   return (
     <div>
       <Heading text={"Income Summary"} color="#1976d2" />
