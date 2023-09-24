@@ -20,7 +20,7 @@ const tabsList = [
 const IncomeStatement = () => {
   const { fetchIncomeStatement, incomeStatement } = useContext(Context);
   const [currentab, setCurrentTab] = React.useState(0);
-  console.log({ tt: '12' })
+  console.log({ tt: '12 test' })
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
